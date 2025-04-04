@@ -1380,7 +1380,6 @@ PRODUCT_PACKAGES += \
     imsdaemon \
     init.qcom.sensors \
     init.qti.chg_policy \
-    init.qti.media \
     init.qti.qcv \
     irsc_util \
     ks \
