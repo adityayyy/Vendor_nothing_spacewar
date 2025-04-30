@@ -1,5 +1,5 @@
 //
-// Automatically generated file. DO NOT MODIFY
+//Automatically generated file. DO NOT MODIFY
 //
 
 soong_namespace {
@@ -14077,7 +14077,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+/* cc_prebuilt_library_shared {
     name: "libarcsoft_faceid",
     owner: "nothing",
     strip: {
@@ -14095,12 +14095,14 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
             ],
-        },
-    },
+        }, 
+    }, 
+
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
+ */
 
 cc_prebuilt_library_shared {
     name: "libarcsoft_hdr_detection",
