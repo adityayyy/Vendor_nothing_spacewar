@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/nothing/Spacewar/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/nothing/Spacewar/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/nothing/Spacewar/proprietary/system/etc/public.libraries.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries.txt \
     vendor/nothing/Spacewar/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
@@ -115,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/nothing/Spacewar/proprietary/system_ext/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
@@ -450,6 +452,50 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Spacewar/proprietary/vendor/firmware/a660_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.b02 \
     vendor/nothing/Spacewar/proprietary/vendor/firmware/a660_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.elf \
     vendor/nothing/Spacewar/proprietary/vendor/firmware/a660_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.mdt \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b00 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b01 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b02 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b03 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b04 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b05 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b06 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b07 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b08 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b09 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b10 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b11 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b12 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b13 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b14 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b15 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b16 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b17 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b18 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b19 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mbn \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass-lt.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mdt \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b04 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b05 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b06 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b07 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b10 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/nothing/Spacewar/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/nothing/Spacewar/proprietary/vendor/firmware/goodixfp64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp64.b00 \
     vendor/nothing/Spacewar/proprietary/vendor/firmware/goodixfp64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp64.b01 \
     vendor/nothing/Spacewar/proprietary/vendor/firmware/goodixfp64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp64.b02 \
@@ -595,6 +641,7 @@ PRODUCT_PACKAGES += \
     libminksocket \
     libmiracast \
     libmmosal_vendor \
+    libmpbase \
     libmulawdec \
     libnetmgr \
     liboemcrypto \
@@ -698,9 +745,50 @@ PRODUCT_PACKAGES += \
     com.qti.eeprom.abra_qtech_p24c64f_imx471_eeprom \
     com.qti.eeprom.abra_truly_p24c64f_imx471_eeprom \
     com.qti.eeprom.gt24p128c2csli_imx766 \
+    com.qti.eeprom.irs2381c_polar \
+    com.qti.eeprom.truly_cmb433 \
+    com.qti.flash.lm3644 \
     com.qti.sensor.abra_qtech_imx471_front \
     com.qti.sensor.abra_qtech_imx766_wide \
     com.qti.sensor.abra_qtech_s5kjn1_uw \
+    com.qti.sensor.imx318 \
+    com.qti.sensor.imx334 \
+    com.qti.sensor.imx362 \
+    com.qti.sensor.imx376 \
+    com.qti.sensor.imx386 \
+    com.qti.sensor.imx476 \
+    com.qti.sensor.imx481 \
+    com.qti.sensor.imx519 \
+    com.qti.sensor.imx563 \
+    com.qti.sensor.imx576 \
+    com.qti.sensor.imx577 \
+    com.qti.sensor.imx586 \
+    com.qti.sensor.imx766 \
+    com.qti.sensor.max7366_6dof \
+    com.qti.sensor.max7366_eyetrack \
+    com.qti.sensor.max7366_ov6211 \
+    com.qti.sensor.max7366_ov9282 \
+    com.qti.sensor.ov12a10 \
+    com.qti.sensor.ov12a10_front \
+    com.qti.sensor.ov13855 \
+    com.qti.sensor.ov13880 \
+    com.qti.sensor.ov6211_master \
+    com.qti.sensor.ov6211_slave \
+    com.qti.sensor.ov7251 \
+    com.qti.sensor.ov8856 \
+    com.qti.sensor.ov8856_master \
+    com.qti.sensor.ov8856_slave \
+    com.qti.sensor.ov9282_master \
+    com.qti.sensor.ov9282_slave \
+    com.qti.sensor.s5k2l7 \
+    com.qti.sensor.s5k2x5sp \
+    com.qti.sensor.s5k33dxx \
+    com.qti.sensor.s5k3m5 \
+    com.qti.sensor.s5k3p9 \
+    com.qti.sensor.s5k4h7 \
+    com.qti.sensor.s5k5e9yu05 \
+    com.qti.sensor.s5k5e9yx04 \
+    com.qti.sensor.s5kjd1sp \
     com.arcsoft.node.capturebokeh \
     com.arcsoft.node.hdr \
     com.arcsoft.node.picauto \
@@ -833,6 +921,7 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libPlaneSegmentationWrapper \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libSonyIMX471RmscLibrary \
@@ -840,17 +929,28 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaoa \
+    libarcsoft_aiscenedetection \
+    libarcsoft_beautyshot \
+    libarcsoft_dark_vision_raw \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_dualcam_refocus_video \
     libarcsoft_hdr_detection \
     libarcsoft_high_dynamic_range \
+    libarcsoft_low_light_hdr \
+    libarcsoft_mf_superresolution \
     libarcsoft_night_video \
+    libarcsoft_portrait_distortion_correction \
+    libarcsoft_portrait_super_night_raw \
     libarcsoft_singlecam_bokeh \
+    libarcsoft_super_night_raw \
+    libarcsoft_superportrait \
+    libarcsoft_watermark \
     libbitmlengine \
     libbitmlenginev2 \
     libcacertclient \
     libcamera_nn_stub \
     libcamerapostproc \
+    libcamxextension_night \
     libcamxfacialfeatures \
     libcamxfdalgo \
     libcamxfdengine \
@@ -867,7 +967,6 @@ PRODUCT_PACKAGES += \
     libcneoplookup \
     libcneqmiutils \
     libcom.qti.chinodeutils \
-    libcvp_util \
     libcvpcpuRev_skel \
     libdataitems \
     libdepthcomputation \
@@ -877,13 +976,17 @@ PRODUCT_PACKAGES += \
     libdpmqmihal \
     libdpps \
     libdrmtime \
+    libeepromcutter \
     libesepmconfig \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
     libgf_hal \
     libgnsspps \
+    libhdr_stub \
     libhdr_tm \
+    libhdrdynamic \
+    libhdrdynamicootf \
     libipebpsstriping \
     libipebpsstriping170 \
     libizat_client_api \
@@ -900,6 +1003,7 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmctfengine_stub \
+    libmfec \
     libmm-hdcpmgr \
     libmmcamera_bestats \
     libmmcamera_cac3 \
@@ -910,7 +1014,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
     libmorpho_MotionSensor \
-    libmpbase \
+    libmouth_mask_detection.arcsoft \
     libnanopb \
     libnetmgr_common \
     libnetmgr_nr_fusion \
@@ -1136,6 +1240,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
     vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
     libavenhancements \
+    libencoderjpeg_jni \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1193,6 +1298,7 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     tcmclient \
+    androidx.camera.extensions.impl.advanced \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
